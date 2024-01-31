@@ -78,7 +78,7 @@ async function main() {
   while (true) {
     try {
       if (count % 3 === 0) {
-        // 调用打开浏览器函数
+        // 调用changeBrowser函数
         await changeBrowser();
       }
       const addresses = fs.readFileSync(textFile, 'utf8').split('\n');
